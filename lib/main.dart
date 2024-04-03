@@ -1,5 +1,4 @@
-import 'package:favorite_meals/data/dummy_data.dart';
-import 'package:favorite_meals/screens/meals.dart';
+import 'package:favorite_meals/screens/categories.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,10 +22,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: const MealsScreen(
-        title: 'Some category...',
-        meals: dummyMeals,
-      ),
+      home: const CategoriesScreen(),
     );
   }
 }
